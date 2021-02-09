@@ -1,20 +1,20 @@
 import { Point } from './point';
 
 /**
+ * Converts an angle in radians to an angle in degrees by multiplying with 180 and dividing by 180
+ * @param angleInRadians
+ */
+export const radiansToDegrees = (angleInRadians: number) => {
+  return (angleInRadians * 180) / Math.PI;
+};
+
+/**
  * Convert an angle in degrees to an angle in radians by multiplying by PI and dividing the result by 180
  * https://www.mathwarehouse.com/trigonometry/radians/convert-degee-to-radians.php
  * @param angleInDegrees
  */
 export const degreesToRadians = (angleInDegrees: number) => {
   return (angleInDegrees * Math.PI) / 180;
-};
-
-/**
- * Converts an angle in radians to an angle in degrees by multiplying with 180 and dividing by 180
- * @param angleInRadians
- */
-export const radiansToDegrees = (angleInRadians: number) => {
-  return (angleInRadians * 180) / Math.PI;
 };
 
 /**
